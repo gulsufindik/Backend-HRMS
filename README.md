@@ -18,14 +18,6 @@ Guests who register with the application can access information and comments per
 You will need to have Gradle and JDK 8 or higher. The recommended way to run the sample applications is with IDEs like IntelliJ IDEA or Eclipse. You will also need to run MongoDB, PostgreSQL and RabbitMQ in Docker container, so you must have Docker installed on your local machine.
 
 ### Scripts
-- MongoDB
-```
-docker run -d -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret -p 27017:27017 mongo
-```
-- MongoDB Compass Download (GUI)
-```
-  https://www.mongodb.com/try/download/compass
-```
 - PostgreSQL
 ```
 docker run -d --name some-postgres -e POSTGRES_PASSWORD=secret -e PGDATA=/var/lib/postgresql/data/pgdata -v /custom/mount:/var/lib/postgresql/data -p 5432:5432 postgres
